@@ -173,15 +173,25 @@ profileInfo
  print("\nІнфорація про погоду:")
  print("Температура: \(weatherInfo.1)")
 */
-print("Прізвище: ")
-print("Вік: ")
-print("Зріст: см")
-print("Вага: кг")
-print("У шлюбі: ")
+
+var profileInfo = (firstName: userName, surname: userSurname, age: userAge, height: userHeight, weight: userWeight, married: userMarried)
+var weatherInfo = (pressure: averagePressure, humidity: averageHumidity, temperature: averageTemperature)
+
+profileInfo.weight = 90.1
+profileInfo.age = 41
+
+print("Прізвище: \(profileInfo.surname) ")
+print("Вік: \(profileInfo.age) ")
+print("Зріст: \(profileInfo.height) см")
+print("Вага: \(profileInfo.weight) кг")
+print("У шлюбі: \(profileInfo.married)")
+
+weatherInfo.temperature = 24.3
+
 print("\nІнфорація про погоду:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(weatherInfo.pressure) hPa")
+print("Вологість: \(weatherInfo.humidity) %")
+print("Температура: \(weatherInfo.temperature) C")
 print("\nРозділ 1.5 Опціонали\n")
 /*
 Розділ 1.5 - Опціонали
@@ -191,5 +201,6 @@ print("\nРозділ 1.5 Опціонали\n")
 4 Використовуючи print() вивести значення змінної з описом у консоль
 5 перевірте і зробіть Commit (збережіть зміни використовуючт git-клієнт)
 */
+
 print("Користувач авторизован: ")
 print("Користувач авторизован: ")

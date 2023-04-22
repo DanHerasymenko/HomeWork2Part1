@@ -122,14 +122,28 @@ print("\nРозділ 1.3 Псевдоніми\n")
 * вологість - Humidity 50 %
 * температура - Сelsius 18 С
 */
+
+typealias pressure = Double
+typealias humidity = UInt8
+typealias temperature = Float
+
+var averagePressure: pressure = 101.325
+var averageHumidity: humidity = 64
+var averageTemperature: temperature = 22.5
+
 print("Погода вчора:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(averagePressure) hPa")
+print("Вологість: \(averageHumidity) %")
+print("Температура: \(averageTemperature) C")
+
+averagePressure = 110.115
+averageHumidity = 56
+averageTemperature = 26.5
+
 print("\nПогода сьогодні:")
-print("Тиск: hPa")
-print("Вологість: %")
-print("Температура: C")
+print("Тиск: \(averagePressure) hPa")
+print("Вологість: \(averageHumidity) %")
+print("Температура: \(averageTemperature) C")
 print("\nРозділ 1.4 Кортежі\n")
 /*
 Розділ 1.4 - Кортежі
